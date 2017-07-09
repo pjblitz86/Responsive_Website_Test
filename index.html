@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="test responsive webpage devbridge"/>
+    <meta name="keywords" content="test"/>
+    <meta name="author" content="Paulius Juknis"/>
+    <title>Responsive web test | Welcome!</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+	<script src="scripts/validate.js"></script>
+</head>
+
+<body>
+<!-- use only HTML5 semantic tags cause of responsive nature -->
+
+<!-- HEADER -->
+
+<header>
+    <div class="container">
+        <div class="top_nav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header_main">
+            <div class="header_title"><h1>My <span class="highlight">Responsive</span> Site</h1>
+            </div>
+            <div class="main_nav">
+                <nav>
+                    <ul>
+                        <li class="current">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<!-- TOP CONTENT -->
+
+<section class="top_content">
+    <div class="container">
+        <div class="content_left">
+
+            <article class="article_top">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <p>Donec arcu ante, placerat sit amet tellus maximus, ultricies tempor ex. Suspendisse imperdiet
+                    cursus
+                    est. Nulla fermentum quam vitae urna varius, ut efficitur arcu mattis. Phasellus in lacus in
+                    libero
+                    bibendum posuere. Nunc pellentesque non lectus id lobortis. Nulla at efficitur est.</p>
+                <p>Donec arcu ante, placerat sit amet tellus maximus, ultricies tempor ex. Suspendisse imperdiet
+                    cursus
+                    est. Nulla fermentum quam vitae urna varius, ut efficitur arcu mattis. Phasellus in lacus in
+                    libero
+                    bibendum posuere. Nunc pellentesque non lectus id lobortis. Nulla at efficitur est.</p>
+                <p>Donec arcu ante, placerat sit amet tellus maximus, ultricies tempor ex. Suspendisse imperdiet
+                    cursus
+                    est. Nulla fermentum quam vitae urna varius, ut efficitur arcu mattis. Phasellus in lacus in
+                    libero
+                    bibendum posuere. Nunc pellentesque non lectus id lobortis. Nulla at efficitur est.</p>
+                <p>Donec arcu ante, placerat sit amet tellus maximus, ultricies tempor ex. Suspendisse imperdiet
+                    cursus
+                    est. Nulla fermentum quam vitae urna varius, ut efficitur arcu mattis. Phasellus in lacus in
+                    libero
+                    bibendum posuere. Nunc pellentesque non lectus id lobortis. Nulla at efficitur est.</p>
+                <p>Donec arcu ante, placerat sit amet tellus maximus, ultricies tempor ex. Suspendisse imperdiet
+                    cursus
+                    est. Nulla fermentum quam vitae urna varius, ut efficitur arcu mattis. Phasellus in lacus in
+                    libero
+                    bibendum posuere. Nunc pellentesque non lectus id lobortis. Nulla at efficitur est.</p>
+            </article>
+
+            <div class="article_bottom">
+                <article class="article_bottom_left">
+                    <p>Sed ut egestas ipsum, sed eleifend justo. Sed a mattis augue. Fusce vel efficitur est. Ut
+                        blandit, arcu quis tincidunt mattis, dui urna scelerisque sem, et egestas nibh arcu ac erat.
+                        Vestibulum leo nunc, tincidunt ac imperdiet id, convallis ac ex.</p>
+                </article>
+                <article class="article_bottom_right">
+                    <h3>Sed ut egestas ipsum, sed eleifend justo</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Sed a mattis augue</a>
+                            <hr>
+                        </li>
+
+                        <li>
+                            <a href="#">Fusce vel efficitur est</a>
+                            <hr>
+                        </li>
+
+                        <li>
+                            <a href="#">Dui urna scelerisque sem</a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+        <aside class="content_right">
+            <h3>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</h3>
+            <p>Sed ut egestas ipsum, sed eleifend justo. Sed a mattis augue. Fusce vel efficitur est. Ut
+                blandit, arcu quis tincidunt mattis, dui urna scelerisque sem, et egestas nibh arcu ac erat.
+                Vestibulum leo nunc, tincidunt ac imperdiet id, convallis ac ex.</p>
+            <form id="form" class="forma" onsubmit="return validateForm();" method="post">
+                <label>First name:</label><br>
+                <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" size="32" required maxlength="30">
+                <br>
+                <label>Last name:</label><br>
+                <input type="text" name="lastname" placeholder="Enter your last name" size="32" required maxlength="30">
+                <br>
+                <label>Message:</label><br>
+                <textarea name="message" rows="7" cols="25" required maxlength="100"></textarea>
+                <br><br>
+                <button class="button" type="submit">SUBMIT</button>
+            </form>
+        </aside>
+
+
+    </div>
+</section>
+
+<!-- BUTTOM CONTENT -->
+<section class="bottom_content">
+    <div class="container">
+        <div class="bottom_text1">
+            <p>Donec arcu ante, placerat sit amet tellus maximus, ultricies tempor ex. Suspendisse imperdiet cursus est.
+                Nulla fermentum quam vitae urna varius, ut efficitur arcu mattis. Phasellus in lacus in libero bibendum
+                posuere. Nunc pellentesque non lectus id lobortis. Nulla at efficitur est.</p>
+        </div>
+        <div class="bottom_text2">
+            <p>Donec arcu ante, placerat sit amet tellus maximus, ultricies tempor ex. Suspendisse imperdiet cursus est.
+                Nulla fermentum quam vitae urna varius, ut efficitur arcu mattis. Phasellus in lacus in libero bibendum
+                posuere. Nunc pellentesque non lectus id lobortis. Nulla at efficitur est.</p>
+        </div>
+        <div class="bottom_text3">
+            <p>Donec arcu ante, placerat sit amet tellus maximus, ultricies tempor ex. Suspendisse imperdiet cursus est.
+                Nulla fermentum quam vitae urna varius, ut efficitur arcu mattis. Phasellus in lacus in libero bibendum
+                posuere. Nunc pellentesque non lectus id lobortis. Nulla at efficitur est.</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="container">
+        <div class="footer_links">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer_text">
+            <p>Sed ut egestas ipsum, sed eleifend justo. Sed a mattis augue. Fusce vel efficitur est. Ut blandit, arcu
+                quis tincidunt mattis, dui urna scelerisque sem, et egestas nibh arcu ac erat. Vestibulum leo nunc,
+                tincidunt ac imperdiet id, convallis ac ex.</p>
+        </div>
+        <div class="footer_title">
+            <h3>The Site</h3>
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+
+</html>
+
